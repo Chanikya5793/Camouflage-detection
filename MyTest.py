@@ -5,6 +5,7 @@ import numpy as np
 from scipy import misc
 from lib.C2FNet import C2FNet
 from utils.dataloader import test_dataset
+import argparse  # Add missing import statement for "argparse"
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--testsize', type=int, default=352, help='testing size')
