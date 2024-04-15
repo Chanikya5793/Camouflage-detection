@@ -54,9 +54,9 @@ def train(train_loader, model, optimizer, epoch):
         # ---- train visualization ----
         if i % 20 == 0 or i == total_step:
             print('{} Epoch [{:03d}/{:03d}], Step [{:04d}/{:04d}], '
-                  '[lateral-3: {:.4f}]'.
-                  format(datetime.now(), epoch, opt.epoch, i, total_step,
-                         loss_record3.show()))
+                '[lateral-3: {:.4f}]'.
+                format(datetime.now(), epoch, opt.epoch, i, total_step,
+                        loss_record3.show()))
     save_path = 'checkpoints/{}/'.format(opt.train_save)
     os.makedirs(save_path, exist_ok=True)
     if (epoch+1) % 5 == 0:
